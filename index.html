@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -17,7 +18,22 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para ter acesso à sua conta e fazer configurações no seu ambiente.</p>
                 <form action="" method="post">
-                    
+                    <div class="campo">
+                        <span class="material-icons">
+                            person
+                            </span>
+                         <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30"> <label for="ilogin">   
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">
+                            vpn_key
+                            </span>
+                            <input type="password"class="senha" id="isenha" placeholder="Insira a sua Password" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha" > </label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a password <i class="material-icons">mail</i></a>
                 </form>
             </div>
         </section>
